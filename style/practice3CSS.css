@@ -1,0 +1,97 @@
+.doto {
+  font-family: "Doto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "ROND" 0;
+}
+body {
+    background-color: dodgerblue;
+}
+.cloud {
+    background-color: white;
+    width: 175px;
+    height: 125px;
+    border-radius: 95px;
+    position: absolute;
+}
+.cloud1 {
+    background-color: white;
+    width: 175px;
+    height: 125px;
+    border-radius: 95px;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 35px;
+}
+.cloud2 {
+    background-color: white;
+    border-radius: 95px;
+    position: absolute;
+    margin-top: 85px;
+    width: 145px;
+    height: 105px;
+}
+#grass {
+    position: absolute;
+    background-color: green;
+    bottom: 0px;
+    width: 1500px;
+    height: 75px;
+}
+#Mario {
+    position: absolute;
+    bottom: 125px;
+    left: 45px;
+    background-color: red;
+    width: 200px;
+    height: 250px;
+}
+.marioFoot {
+    position: relative;
+    background-color: brown;
+    width: 95px;
+    height: 35px;
+}
+#marioFoot2 {
+    height: 75px;
+}
+.marioArm {
+    position: relative;
+    background-color: beige;
+    width: 65px;
+    height: 100px;
+}
+#marioHead {
+    background-color: blanchedalmond;
+    position: absolute;
+    width: 175px;
+    height: 175px;
+    bottom: 250px;
+    left: 12.5px;
+}
+.marioEye {
+    position: absolute;
+    background-color: black;
+    width: 30px;
+    height: 75px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+#marioMouth {
+    background-color: #6c3719;
+    width: 100px;
+    height: 25px;
+    position: absolute;
+    left: 37.5px;
+    bottom: 20px;
+}
+#marioHat {
+    position: absolute;
+    background-color: crimson;
+    width: 185px;
+    height: 35px;
+    left: -5px;
+    text-align: center;
+}
