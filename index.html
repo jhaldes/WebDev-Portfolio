@@ -1,145 +1,592 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Sigma Portfolio :)</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-sm bg-success navbar-dark">
-            <div class="container-fluid">
-                <ul class="navbar-nav">
+<head>
+    <title>James Haldes | Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style/main.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm">
+        <div class="container">
+            <a class="navbar-brand text-gradient" href="index.html">James Haldes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                      <a class="nav-link active" href="index.html">Main Page</a>
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#academics">Academics</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Recipes</a>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Recipes</a>
                         <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="Recipe.html">Recipe 0</a></li>
-                          <li><a class="dropdown-item" href="recipeCSS.html">Recipe 1</a></li>
-                          <li><a class="dropdown-item" href="recipe3.html">Recipe 2</a></li>
+                            <li><a class="dropdown-item" href="Recipe.html">Classic Recipe</a></li>
+                            <li><a class="dropdown-item" href="recipeCSS.html">Styled Recipe</a></li>
+                            <li><a class="dropdown-item" href="recipe3.html">Modern Recipe</a></li>
                         </ul>
+                    </li>
+                    <li class="nav-item">
+                        <button id="theme-toggle" class="btn btn-sm btn-outline-primary ms-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-stars" viewBox="0 0 16 16">
+                                <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+                                <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162z"/>
+                            </svg>
+                        </button>
                     </li>
                 </ul>
             </div>
-        </nav>
-        <div class="container-fluid">
-            <div class="m-2 p-4 bg-success text-white rounded">
-                <div class="row">
-                    <div class="col-md-8">
-                        <p class="text-wrap">Hi! I'm James Haldes and this is my portfolio. I go to Lane Tech HS, and I am in freshman year. I 3D print, program, and am in the Robotics club after school.</p>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h2 class="card-title">Projects</h2>
-                                        <p class="card-text">Examples of my various projects. This will be updated as I make more stuff, so keep an eye out for new projects I make!</p>
-                                        <a href="#pROJECTS" class="btn btn-success">Goto section</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h2 class="card-title">Academics</h2>
-                                        <p class="card-text">What classes I take & GPA.</p>
-                                        <a href="#aCADEMICS" class="btn btn-success">Goto section</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <img class="img-fluid rounded" src="Media/IMG_20250211_081207.jpg" alt="my face">
-                    </div>
-                </div>
-            </div>
-            <div class="row bg-success rounded m-2 p-2">
-                <div class="col-md-4" style="width: 100%">
-                    <h2 class="bg-light rounded">About Me</h2>
-                </div>
-                <div class="col-md-8" style="width: 100%">
-                    <p class="bg-light rounded">I am a freshmen at Lane Tech High School in Chicago. I am part of the Alpha and CS concentrations, and I have a 4.0 GPA. After school I go to robotics in the JV CORE subgroup on Mondays through Thursdays. On the weekends, I 3D print a wide variety of projects, as well as some of the other Alpha student's science fair projects. I know Python and a small amount of C++, and I am proficient in Arduino. I aspire to go to college for an engineering field (though I am unsure of which field specifcially).</p>
-                </div>
-            </div>
-            <div class="row bg-success rounded m-2 p-2" id="pROJECTS">
-                <h2 class="bg-light rounded">My Projects:</h2>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img class="card-image-top rounded" src="Media/Screenshot 2025-02-14 10.33.56 PM.png" alt="Science Fair">
-                        <div class="card-body">
-                            <h2 class="card-title">My Science Fair</h2>
-                            <p class="card-text">Status: Incomplete</p>
-                            <p class="card-text">My science fair, which is a water contamination detector, will be completed by May. Check back for when I have the completed board!</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img class="card-image-top rounded" src="Media/20250103_153033.jpg" alt="plane">
-                        <div class="card-body">
-                            <h2 class="card-title">RC Plane</h2>
-                            <p class="card-text">Status: Incomplete</p>
-                            <p class="card-text">This is the first RC plane I have built. While it is not an original design, I am planning on making original designs in the future.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img class="card-image-top rounded" src="Media/20250114_224634.jpg" alt="Speech box">
-                        <div class="card-body">
-                            <h2 class="card-title">Speech Box</h2>
-                            <p class="card-text">Status: Completed</p>
-                            <p class="card-text">While this is just the circuit board for it (I forgot to take an image of the completed project), it is completed. It was made for a health project, so I donated it to my health teacher after I was done.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row bg-success rounded m-2 p-2" id="aCADEMICS">
-                <div class="col-md-4 bg-light rounded">
-                    <h2>What Classes I Take</h2>
-                    <ol>
-                        <li>1st Period: H Web Development</li>
-                        <li>2nd Period: H English I</li>
-                        <li>3rd Period: N/A</li>
-                        <li>4th Period: H Spanish II</li>
-                        <li>5th Period: H Geometry</li>
-                        <li>6th Period: H Biology</li>
-                        <li>7th Period: AP Human Geography</li>
-                        <li>8th Period: R PE/Health I</li>
-                    </ol>
-                </div>
+        </div>
+    </nav>
+
+    <header class="section animate-fade-in">
+        <div class="container">
+            <div class="row align-items-center">
                 <div class="col-md-8">
-                    <img class="rounded img-fluid" src="Media/Screenshot 2025-02-16 6.24.28 PM.png" alt="My Info">
+                    <h1 class="display-4 fw-bold text-gradient mb-4">Hi, I'm James Haldes</h1>
+                    <p class="lead mb-4">A freshman at Lane Tech HS passionate about 3D printing, programming, and robotics. I'm always exploring new technologies and working on exciting projects.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#projects" class="btn btn-primary">View My Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img class="profile-image" src="Media/IMG_20250211_081207.jpg" alt="James Haldes">
                 </div>
             </div>
         </div>
-        <footer class="footer m-2 p-2">
-            <div class="container-fluid bg-success rounded">
-                <div class="row">
-                    <h2 class="text-center text-light">Contact Me At:</h2>
-                    <div class="col-md-2">
-                        <button type="button" class="btn btn-success" data-bs-toggle="popover" title="Discord Username:" data-bs-trigger="focus" data-bs-placement="top" data-bs-content="wub333">Discord</button>
-                    </div>
-                    <div class="col-md-2">
-                        <button type="button" class="btn btn-success" data-bs-toggle="popover" title="School Email:" data-bs-trigger="focus" data-bs-content="JHaldes@cps.edu">School Email</button>
-                    </div>
-                    <div class="col-md-2">
-                        <button type="button" class="btn btn-success" data-bs-toggle="popover" title="Personal Email:" data-bs-trigger="focus" data-bs-content="skydog.w7@gmail.com">Personal Email</button>
-                    </div>
-                    <div class="col-md-6">
-                        <!--I just put this here so the grid is complete. If you're seeing this and not my teacher, why are you here? :)-->
+    </header>
+
+    <section id="about" class="section bg-light animate-slide-up">
+        <div class="container">
+            <h2 class="text-center mb-5">About Me</h2>
+            <div class="card">
+                <div class="card-body">
+                    <p class="lead">I am a freshman at Lane Tech High School in Chicago, part of the Alpha and CS concentrations with a perfect 4.0 GPA. My passion for technology and engineering drives me to constantly learn and create.</p>
+                    <div class="row mt-4">
+                        <div class="col-md-4">
+                            <h3 class="h5">🤖 Robotics</h3>
+                            <p>Active member of the JV CORE robotics team, participating Monday through Thursday.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h3 class="h5">🖨️ 3D Printing</h3>
+                            <p>Experienced in 3D printing various projects, including science fair projects for fellow students.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h3 class="h5">💻 Programming</h3>
+                            <p>Proficient in Python, Arduino, and learning C++. Always eager to expand my programming skills.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </footer>
-        <script>
-            var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-            var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-              return new bootstrap.Popover(popoverTriggerEl)
-            })
-        </script>
-    </body>
+        </div>
+    </section>
+
+    <section id="projects" class="section animate-slide-up">
+        <div class="container">
+            <h2 class="text-center mb-5">My Projects</h2>
+            <div class="grid grid-3">
+                <div class="card project-card">
+                    <img class="card-img-top" src="Media/Screenshot 2025-02-14 10.33.56 PM.png" alt="Water Contamination Circuit with Arduino UNO">
+                    <div class="card-body">
+                        <div class="project-status in-progress">Status: In Progress</div>
+                        <h3 class="h4">Water Contamination Detector</h3>
+                        <p>An innovative science fair project focused on detecting water contamination. Expected completion: May 2025.</p>
+                    </div>
+                </div>
+                <div class="card project-card">
+                    <img class="card-img-top" src="Media/20250103_153033.jpg" alt="RC Plane">
+                    <div class="card-body">
+                        <div class="project-status in-progress">Status: In Progress</div>
+                        <h3 class="h4">RC Plane</h3>
+                        <p>My first RC plane build, laying the foundation for future original designs and aeronautical projects.</p>
+                    </div>
+                </div>
+                <div class="card project-card">
+                    <img class="card-img-top" src="Media/20250114_224634.jpg" alt="Speech Box">
+                    <div class="card-body">
+                        <div class="project-status completed">Status: Completed</div>
+                        <h3 class="h4">Speech Box</h3>
+                        <p>A successful health project that was donated to my health teacher after completion.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="academics" class="section animate-slide-up">
+        <div class="container">
+            <div class="section-divider">
+                <h2 class="text-center mb-5">Academic Profile</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="h4 mb-4">Current Courses</h3>
+                            <ul class="course-list">
+                                <li class="course-item">
+                                    <span class="course-period">1st</span>
+                                    <span class="course-name">H Web Development</span>
+                                </li>
+                                <li class="course-item">
+                                    <span class="course-period">2nd</span>
+                                    <span class="course-name">H English I</span>
+                                </li>
+                                <li class="course-item">
+                                    <span class="course-period">4th</span>
+                                    <span class="course-name">H Spanish II</span>
+                                </li>
+                                <li class="course-item">
+                                    <span class="course-period">5th</span>
+                                    <span class="course-name">H Geometry</span>
+                                </li>
+                                <li class="course-item">
+                                    <span class="course-period">6th</span>
+                                    <span class="course-name">H Biology</span>
+                                </li>
+                                <li class="course-item">
+                                    <span class="course-period">7th</span>
+                                    <span class="course-name">AP Human Geography</span>
+                                </li>
+                                <li class="course-item">
+                                    <span class="course-period">8th</span>
+                                    <span class="course-name">R PE/Health I</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="h4 mb-4">Academic Achievements</h3>
+                            <div class="academic-info mb-4">
+                                <div class="info-grid">
+                                    <div class="info-item">
+                                        <span class="info-label">School</span>
+                                        <span class="info-value">LANE TECH HS</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="info-label">Grade Level</span>
+                                        <span class="info-value">09</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="info-label">GPA</span>
+                                        <span class="info-value text-primary">4.0</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="highlights-section">
+                                <h4 class="h5 mb-3">Highlights</h4>
+                                <ul class="highlights-list">
+                                    <li>
+                                        <span class="highlight-icon">🎓</span>
+                                        <span>4.0 GPA</span>
+                                    </li>
+                                    <li>
+                                        <span class="highlight-icon">⭐</span>
+                                        <span>Alpha Program Member</span>
+                                    </li>
+                                    <li>
+                                        <span class="highlight-icon">💻</span>
+                                        <span>CS Concentration</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer">
+        <div class="container">
+            <h2 class="text-center mb-5">Get in Touch</h2>
+            <div class="row justify-content-center text-center g-4">
+                <div class="col-md-4">
+                    <a href="https://discord.com/users/wub333" target="_blank" class="contact-link">
+                        <div class="card">
+                            <div class="card-body d-flex flex-column align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="mb-3" viewBox="0 0 16 16">
+                                    <path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"/>
+                                </svg>
+                                <h3 class="h5">Discord</h3>
+                                <p class="mb-0 text-primary">wub333</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="mailto:JHaldes@cps.edu" class="contact-link">
+                        <div class="card">
+                            <div class="card-body d-flex flex-column align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="mb-3" viewBox="0 0 16 16">
+                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                                </svg>
+                                <h3 class="h5">School Email</h3>
+                                <p class="mb-0 text-primary">JHaldes@cps.edu</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="mailto:skydog.w7@gmail.com" class="contact-link">
+                        <div class="card">
+                            <div class="card-body d-flex flex-column align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="mb-3" viewBox="0 0 16 16">
+                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383z"/>
+                                </svg>
+                                <h3 class="h5">Personal Email</h3>
+                                <p class="mb-0 text-primary">skydog.w7@gmail.com</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p class="text-center text-muted mb-0">&copy; 2025 James Haldes. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Overlay -->
+    <div class="lightbox-overlay">
+        <div class="lightbox-content">
+            <button class="lightbox-close">&times;</button>
+            <img class="lightbox-image" src="" alt="">
+            <div class="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <script>
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+        
+        // Check for saved theme preference
+        if (localStorage.getItem('theme') === 'dark') {
+            body.classList.add('dark-mode');
+        }
+        
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            localStorage.setItem('theme', body.classList.contains('dark-mode') ? 'dark' : 'light');
+        });
+
+        // Lightbox functionality
+        const lightboxOverlay = document.querySelector('.lightbox-overlay');
+        const lightboxImage = document.querySelector('.lightbox-image');
+        const lightboxCaption = document.querySelector('.lightbox-caption');
+        const lightboxClose = document.querySelector('.lightbox-close');
+
+        // Get all clickable images
+        const clickableImages = document.querySelectorAll('.card-img-top, .profile-image, .img-fluid');
+
+        clickableImages.forEach(img => {
+            img.addEventListener('click', () => {
+                lightboxImage.src = img.src;
+                lightboxImage.alt = img.alt;
+                // Only show caption for images that aren't academic info or arduino
+                if (img.alt !== "Academic Information" && !img.alt.includes("Arduino")) {
+                    lightboxCaption.textContent = img.alt;
+                    lightboxCaption.style.display = 'block';
+                } else {
+                    lightboxCaption.textContent = '';
+                    lightboxCaption.style.display = 'none';
+                }
+                lightboxOverlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        // Close lightbox when clicking the close button or outside the image
+        lightboxClose.addEventListener('click', closeLightbox);
+        lightboxOverlay.addEventListener('click', (e) => {
+            if (e.target === lightboxOverlay) {
+                closeLightbox();
+            }
+        });
+
+        // Close lightbox when pressing Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && lightboxOverlay.classList.contains('active')) {
+                closeLightbox();
+            }
+        });
+
+        function closeLightbox() {
+            lightboxOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+            lightboxImage.src = '';
+        }
+
+        // Initialize popovers
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+        });
+
+        // Smooth scrolling for anchor links with offset
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                const navbarHeight = document.querySelector('.navbar').offsetHeight;
+                const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
+                
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+    <style>
+        .footer {
+            padding: var(--spacing-2xl) 0 var(--spacing-lg);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(to right, 
+                transparent, 
+                var(--border) 20%, 
+                var(--border) 80%, 
+                transparent
+            );
+        }
+
+        .dark-mode .footer::before {
+            background: linear-gradient(to right, 
+                transparent, 
+                var(--dark-border) 20%, 
+                var(--dark-border) 80%, 
+                transparent
+            );
+        }
+
+        .footer-copyright {
+            margin-top: var(--spacing-2xl);
+            padding-top: var(--spacing-lg);
+            border-top: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .dark-mode .footer-copyright {
+            border-top-color: rgba(255, 255, 255, 0.05);
+        }
+
+        .contact-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .contact-link .card {
+            transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+            border: 1px solid var(--border);
+            background: var(--background);
+        }
+
+        .dark-mode .contact-link .card {
+            border-color: var(--dark-border);
+            background: var(--dark-background);
+        }
+
+        .contact-link:hover .card {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .contact-link svg {
+            color: var(--primary);
+            transition: transform 0.2s ease-out;
+        }
+
+        .contact-link:hover svg {
+            transform: scale(1.1);
+        }
+
+        .contact-link .text-primary {
+            transition: color 0.2s ease-out;
+        }
+
+        .contact-link:hover .text-primary {
+            color: var(--primary-dark) !important;
+        }
+
+        .section-divider {
+            position: relative;
+            margin-bottom: var(--spacing-2xl);
+        }
+
+        .section-divider::after {
+            content: '';
+            position: absolute;
+            bottom: -1rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60%;
+            height: 1px;
+            background: linear-gradient(to right, 
+                transparent, 
+                var(--border) 20%, 
+                var(--border) 80%, 
+                transparent
+            );
+        }
+
+        .dark-mode .section-divider::after {
+            background: linear-gradient(to right, 
+                transparent, 
+                var(--dark-border) 20%, 
+                var(--dark-border) 80%, 
+                transparent
+            );
+        }
+
+        .course-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .course-item {
+            display: flex;
+            align-items: center;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .dark-mode .course-item {
+            border-bottom-color: var(--dark-border);
+        }
+
+        .course-item:last-child {
+            border-bottom: none;
+        }
+
+        .course-period {
+            background: var(--primary);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: var(--radius-md);
+            font-size: 0.875rem;
+            font-weight: 500;
+            min-width: 3rem;
+            text-align: center;
+            margin-right: 1rem;
+        }
+
+        .course-name {
+            font-weight: 500;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+
+        .info-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .info-label {
+            font-size: 0.875rem;
+            color: var(--text-light);
+            margin-bottom: 0.25rem;
+        }
+
+        .dark-mode .info-label {
+            color: var(--dark-text-light);
+        }
+
+        .info-value {
+            font-weight: 600;
+            font-size: 1.125rem;
+            color: var(--text);
+            transition: color 0.3s ease;
+        }
+
+        .dark-mode .info-value {
+            color: var(--dark-text);
+        }
+
+        .dark-mode .info-value.text-primary {
+            color: var(--primary) !important;
+        }
+
+        .highlights-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .highlights-list li {
+            display: flex;
+            align-items: center;
+            padding: 0.5rem 0;
+            color: var(--text);
+            transition: color 0.3s ease;
+        }
+
+        .dark-mode .highlights-list li {
+            color: var(--dark-text);
+        }
+
+        .highlight-icon {
+            font-size: 1.25rem;
+            margin-right: 0.75rem;
+            width: 1.5rem;
+            text-align: center;
+        }
+
+        .card {
+            background: linear-gradient(
+                to bottom,
+                var(--background) 0%,
+                var(--background-alt) 100%
+            );
+            border: 1px solid var(--border);
+            transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+        }
+
+        .dark-mode .card {
+            background: linear-gradient(
+                to bottom,
+                var(--dark-background) 0%,
+                var(--dark-background-alt) 100%
+            );
+            border-color: var(--dark-border);
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+    </style>
+</body>
 </html>
