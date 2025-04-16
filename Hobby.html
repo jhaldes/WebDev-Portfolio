@@ -74,5 +74,30 @@
                 </div>
             </div>
         </div>
+        <footer class="footer" style="position: fixed; bottom: 0px; left: 0px; width: 100%;">
+            <div class="container-fluid bg-success rounded">
+                <div class="row">
+                    <h2 class="text-center text-light">Contact Me At:</h2>
+                    <div class="col-md-2">
+                        <button type="button" class="btn btn-success" data-bs-toggle="popover" title="Discord Username:" data-bs-trigger="focus" data-bs-placement="top" data-bs-content="wub333">Discord</button>
+                    </div>
+                    <div class="col-md-2">
+                        <button type="button" class="btn btn-success" data-bs-toggle="popover" title="School Email:" data-bs-trigger="focus" data-bs-content="JHaldes@cps.edu">School Email</button>
+                    </div>
+                    <div class="col-md-2">
+                        <button type="button" class="btn btn-success" data-bs-toggle="popover" title="Personal Email:" data-bs-trigger="focus" data-bs-content="skydog.w7@gmail.com">Personal Email</button>
+                    </div>
+                    <div class="col-md-6">
+                        <!--I just put this here so the grid is complete. If you're seeing this and not my teacher, why are you here? :)-->
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script>
+            var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+            var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+              return new bootstrap.Popover(popoverTriggerEl)
+            })
+        </script>
     </body>
 </html>
