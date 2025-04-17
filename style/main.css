@@ -1,0 +1,128 @@
+/* Global site styles and layout helpers */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the body takes at least the full viewport height */
+}
+
+main {
+    flex: 1 0 auto; /* Allows main to grow and take available space */
+    padding-bottom: 2rem; /* Add space before footer */
+}
+
+footer {
+    flex-shrink: 0;
+    margin-top: auto; /* Pushes footer to bottom */
+    width: 100%;
+    padding: 1rem 0;
+}
+
+/* Card spacing and styling */
+.card {
+    margin-bottom: 1.5rem;
+    height: 100%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Footer inner container */
+.footer-container {
+    background-color: #198754;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
+
+/* Contact buttons in footer */
+.btn-contact {
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive card image cropping */
+.card-img-top {
+    object-fit: cover;
+    height: 250px;
+}
+
+/* Navbar brand styling */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+}
+
+/* Improved spacing for content sections */
+.content-section {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card-img-top {
+        height: 200px;
+    }
+    
+    .footer-container {
+        padding: 1rem 0;
+    }
+}
+
+/* Page section styling */
+.page-section {
+    background-color: #198754 !important;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: white !important;
+}
+
+.text-container {
+    background-color: white;
+    color: #212529;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+/* Bio section */
+.bio-container {
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background-color: #198754 !important;
+    color: white !important;
+}
+
+.bio-text {
+    background-color: #f8f9fa !important;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    color: #212529 !important;
+}
+
+.bio-text h2 {
+    color: #212529 !important;
+}
+
+.bio-text p {
+    color: #212529 !important;
+}
+
+/* Fix for specific recipe page styles */
+.recipe-page-container {
+    position: relative;
+    min-height: 800px; /* Ensure space for absolutely positioned elements */
+}
