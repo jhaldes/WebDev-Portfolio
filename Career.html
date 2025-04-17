@@ -1,73 +1,132 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>James's Portfolio</title>
+        <title>James's Portfolio - Career</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style/main.css">
     </head>
     <body>
-        <nav class="navbar navbar-expand-sm bg-success navbar-dark">
+        <nav class="navbar navbar-expand-sm bg-success navbar-dark sticky-top">
             <div class="container-fluid">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a class="nav-link active" href="index.html">Main Page</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="Career.html">Future Career</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="Hobby.html">Hobbies/Extracurriculars</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="Projects.html">In School Projects</a>
-                      </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Recipes</a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="Recipe.html">Recipe 0</a></li>
-                          <li><a class="dropdown-item" href="recipeCSS.html">Recipe 1</a></li>
-                          <li><a class="dropdown-item" href="recipe3.html">Recipe 2</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                <a class="navbar-brand" href="index.html">James Haldes</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                          <a class="nav-link" href="index.html">Main Page</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="Career.html">Future Career</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Hobby.html">Hobbies/Extracurriculars</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Projects.html">In School Projects</a>
+                          </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Recipes</a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="Recipe.html">Recipe 0</a></li>
+                              <li><a class="dropdown-item" href="recipeCSS.html">Recipe 1</a></li>
+                              <li><a class="dropdown-item" href="recipe3.html">Recipe 2</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
-        <div class="container-fluid">
-            <div class="row bg-success rounded m-2 p-2">
-                <div class="col-md-6">
-                    <p class="bg-light rounded">My Dream Career</p>
-                </div>
-                <div class="col-md-6">
-                    <p class="bg-light rounded">My dream career would be an embeded systems engineer working in an aerospace context. To do this, I will take the aerospace engineering Bachelor course at University of Illinois Champaign-Urbana. On top of this, I will be looking into internships that relate to aerospace or embeded systems engineering.</p>
+        
+        <main>
+            <div class="container-fluid py-4">
+                <div class="page-section">
+                    <h1 class="text-center mb-4">My Future Career</h1>
+                    
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <div class="text-container">
+                                <h3>Career Goals</h3>
+                                <p>My dream career would be an embedded systems engineer working in an aerospace context. I'm passionate about combining hardware and software engineering to create complex systems that can be used in aircraft, satellites, and space exploration vehicles.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 mb-4">
+                            <div class="text-container">
+                                <h3>Education Path</h3>
+                                <p>To achieve this goal, I plan to take the Aerospace Engineering Bachelor's program at University of Illinois Champaign-Urbana. On top of this, I will be looking into internships that relate to aerospace or embedded systems engineering to gain practical experience in the field.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row mt-4">
+                        <div class="col-md-12">
+                            <div class="text-container">
+                                <h3>Skills I'm Developing</h3>
+                                <ul>
+                                    <li>Programming in C/C++ and Python</li>
+                                    <li>Microcontroller programming (Arduino, STM32)</li>
+                                    <li>Electronics and circuit design</li>
+                                    <li>3D printing and prototyping</li>
+                                    <li>Mathematics and physics fundamentals</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <footer class="footer" style="position: fixed; bottom: 0px; left: 0px; width: 100%;">
-            <div class="container-fluid bg-success rounded">
-                <div class="row">
-                    <h2 class="text-center text-light">Contact Me At:</h2>
-                    <div class="col-md-2">
-                        <button type="button" class="btn btn-success" data-bs-toggle="popover" title="Discord Username:" data-bs-trigger="focus" data-bs-placement="top" data-bs-content="wub333">Discord</button>
+        </main>
+        
+        <footer>
+            <div class="container-fluid">
+                <div class="footer-container">
+                    <h2 class="text-center text-light mb-3">Contact Me</h2>
+                    <div class="row justify-content-center">
+                        <div class="col-md-2 mb-2">
+                            <button type="button" class="btn btn-success btn-contact" data-bs-toggle="popover" title="Discord Username:" data-bs-content="wub333">Discord</button>
+                        </div>
+                        <div class="col-md-2 mb-2">
+                            <button type="button" class="btn btn-success btn-contact" data-bs-toggle="popover" title="School Email:" data-bs-content="JHaldes@cps.edu">School Email</button>
+                        </div>
+                        <div class="col-md-2 mb-2">
+                            <button type="button" class="btn btn-success btn-contact" data-bs-toggle="popover" title="Personal Email:" data-bs-content="skydog.w7@gmail.com">Personal Email</button>
+                        </div>
                     </div>
-                    <div class="col-md-2">
-                        <button type="button" class="btn btn-success" data-bs-toggle="popover" title="School Email:" data-bs-trigger="focus" data-bs-content="JHaldes@cps.edu">School Email</button>
-                    </div>
-                    <div class="col-md-2">
-                        <button type="button" class="btn btn-success" data-bs-toggle="popover" title="Personal Email:" data-bs-trigger="focus" data-bs-content="skydog.w7@gmail.com">Personal Email</button>
-                    </div>
-                    <div class="col-md-6">
-                        <!--I just put this here so the grid is complete. If you're seeing this and not my teacher, why are you here? :)-->
+                    <div class="row mt-2">
+                        <div class="col-12">
+                            <p class="text-light mb-0">&copy; 2025 James Haldes | Portfolio</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </footer>
+        
         <script>
-            var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-            var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-              return new bootstrap.Popover(popoverTriggerEl)
-            })
+            document.addEventListener('DOMContentLoaded', function() {
+                var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+                var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+                    return new bootstrap.Popover(popoverTriggerEl, {
+                        trigger: 'click',
+                        placement: 'top'
+                    });
+                });
+
+                // Close popovers when clicking outside
+                document.addEventListener('click', function(e) {
+                    popoverTriggerList.forEach(function(popoverTriggerEl) {
+                        if (!popoverTriggerEl.contains(e.target)) {
+                            var popover = bootstrap.Popover.getInstance(popoverTriggerEl);
+                            if (popover) {
+                                popover.hide();
+                            }
+                        }
+                    });
+                });
+            });
         </script>
     </body>
 </html>

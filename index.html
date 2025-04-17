@@ -6,95 +6,122 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style/main.css">
     </head>
     <body>
-        <nav class="navbar navbar-expand-sm bg-success navbar-dark">
+        <nav class="navbar navbar-expand-sm bg-success navbar-dark sticky-top">
             <div class="container-fluid">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a class="nav-link active" href="index.html">Main Page</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="Career.html">Future Career</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="Hobby.html">Hobbies/Extracurriculars</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="Projects.html">In School Projects</a>
-                      </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Recipes</a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="Recipe.html">Recipe 0</a></li>
-                          <li><a class="dropdown-item" href="recipeCSS.html">Recipe 1</a></li>
-                          <li><a class="dropdown-item" href="recipe3.html">Recipe 2</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                <a class="navbar-brand" href="index.html">James Haldes</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                          <a class="nav-link active" href="index.html">Main Page</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="Career.html">Future Career</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="Hobby.html">Hobbies/Extracurriculars</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="Projects.html">In School Projects</a>
+                          </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Recipes</a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="Recipe.html">Recipe 0</a></li>
+                              <li><a class="dropdown-item" href="recipeCSS.html">Recipe 1</a></li>
+                              <li><a class="dropdown-item" href="recipe3.html">Recipe 2</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
-        <div class="container-fluid">
-            <div class="row bg-success rounded m-2 p-2">
-                <div class="col-md-4">
-                    <img class="rounded img-fluid" src="https://raw.githubusercontent.com/Ogyeet10/James-Portfolio/refs/heads/FixTheShit/Media/IMG_20250211_081207.jpg" alt="Me">
+        
+        <main>
+            <div class="container-fluid py-4">
+                <!-- Bio Section -->
+                <div class="page-section bio-container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img class="rounded img-fluid shadow" src="https://raw.githubusercontent.com/Ogyeet10/James-Portfolio/refs/heads/FixTheShit/Media/IMG_20250211_081207.jpg" alt="Me">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="bio-text text-dark">
+                                <h2 class="mb-3 text-dark">About Me</h2>
+                                <p class="text-dark">I am a freshmen at Lane Tech High School in Chicago. I am part of the Alpha and CS concentrations, and I have a 4.0 GPA. After school I go to robotics in the JV CORE subgroup on Mondays through Thursdays. On the weekends, I 3D print a wide variety of projects, as well as some of the other Alpha student's science fair projects. I know Python and a small amount of C/C++, and I am proficient in Arduino and learning STM32. I aspire to go to college for an engineering field (likely in some form of embedded systems or aerospace).</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-8">
-                    <p class="bg-light rounded">I am a freshmen at Lane Tech High School in Chicago. I am part of the Alpha and CS concentrations, and I have a 4.0 GPA. After school I go to robotics in the JV CORE subgroup on Mondays through Thursdays. On the weekends, I 3D print a wide variety of projects, as well as some of the other Alpha student's science fair projects. I know Python and a small amount of C/C++, and I am proficient in Arduino and learning STM32. I aspire to go to college for an engineering field (likely in some form of embedded systems or aerospace).</p>
+                
+                <!-- Projects Section -->
+                <div class="content-section">
+                    <h2 class="text-center mb-4">My Portfolio</h2>
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <img class="card-img-top rounded" src="https://raw.githubusercontent.com/Ogyeet10/James-Portfolio/refs/heads/FixTheShit/Media/Screenshot%202025-02-14%2010.33.56%20PM.png" alt="Science Fair">
+                                <div class="card-body d-flex flex-column">
+                                    <h2 class="card-title">Projects</h2>
+                                    <p class="card-text flex-grow-1">In school projects that also have involved some electronics. Very uncommon for my classes, but it has happened where I built something for the class.</p>
+                                    <a href="Projects.html" class="btn btn-success mt-auto">View Projects</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <img class="card-img-top rounded" src="https://raw.githubusercontent.com/Ogyeet10/James-Portfolio/refs/heads/FixTheShit/Media/20250405_180314.jpg" alt="ex of Hobby">
+                                <div class="card-body d-flex flex-column">
+                                    <h2 class="card-title">Hobbies</h2>
+                                    <p class="card-text flex-grow-1">Here are some of my out of school projects. More coming soon!</p>
+                                    <a href="Hobby.html" class="btn btn-success mt-auto">View Hobbies</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <img class="card-img-top rounded" src="https://raw.githubusercontent.com/Ogyeet10/James-Portfolio/refs/heads/FixTheShit/Media/20250114_224634.jpg" alt="Speech box">
+                                <div class="card-body d-flex flex-column">
+                                    <h2 class="card-title">Future Career & Academics</h2>
+                                    <p class="card-text flex-grow-1">This section covers what career I want to go into (and the college I want to go to so I can get there).</p>
+                                    <a href="Career.html" class="btn btn-success mt-auto">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row bg-success rounded m-2 p-2" id="pROJECTS">
-                <div class="col-md-4">
-                    <div class="card">
-                        <img class="card-image-top rounded rounded" style="height: 675px;" src="https://raw.githubusercontent.com/Ogyeet10/James-Portfolio/refs/heads/FixTheShit/Media/Screenshot%202025-02-14%2010.33.56%20PM.png" alt="Science Fair">
-                        <div class="card-body">
-                            <h2 class="card-title">Projects</h2>
-                            <p class="card-text">In school projects that also have involved some electronics. Very uncommon for my classes, but it has happened where I built something for the class.</p>
-                            <a href="Projects.html" class="btn btn-success">Click Here</a>
+        </main>
+        
+        <footer>
+            <div class="container-fluid">
+                <div class="footer-container">
+                    <h2 class="text-center text-light mb-3">Contact Me</h2>
+                    <div class="row justify-content-center">
+                        <div class="col-md-2 mb-2">
+                            <button type="button" class="btn btn-success btn-contact" data-bs-toggle="popover" title="Discord Username:" data-bs-content="wub333">Discord</button>
+                        </div>
+                        <div class="col-md-2 mb-2">
+                            <button type="button" class="btn btn-success btn-contact" data-bs-toggle="popover" title="School Email:" data-bs-content="JHaldes@cps.edu">School Email</button>
+                        </div>
+                        <div class="col-md-2 mb-2">
+                            <button type="button" class="btn btn-success btn-contact" data-bs-toggle="popover" title="Personal Email:" data-bs-content="skydog.w7@gmail.com">Personal Email</button>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img class="card-image-top rounded rounded" style="height: 725px;" src="https://raw.githubusercontent.com/Ogyeet10/James-Portfolio/refs/heads/FixTheShit/Media/20250405_180314.jpg" alt="ex of Hobby">
-                        <div class="card-body">
-                            <h2 class="card-title">Hobbies</h2>
-                            <p class="card-text">Here are some of my out of school projects. More coming soon!</p>
-                            <a href="Hobby.html" class="btn btn-success">Click Here</a>
+                    <div class="row mt-2">
+                        <div class="col-12">
+                            <p class="text-light mb-0">&copy; 2025 James Haldes | Portfolio</p>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img class="card-image-top rounded rounded" style="height: 700px;" src="https://raw.githubusercontent.com/Ogyeet10/James-Portfolio/refs/heads/FixTheShit/Media/20250114_224634.jpg" alt="Speech box">
-                        <div class="card-body">
-                            <h2 class="card-title">Future Career & Academics</h2>
-                            <p class="card-text">This section covers what career I want to go into (and the college I want to go to so I can get there).</p>
-                            <a href="Career.html" class="btn btn-success">Click Here</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <footer class="footer m-2 p-2">
-            <div class="container-fluid bg-success rounded">
-                <div class="row">
-                    <h2 class="text-center text-light">Contact Me At:</h2>
-                    <div class="col-md-2">
-                        <button type="button" class="btn btn-success" data-bs-toggle="popover" title="Discord Username:" data-bs-content="wub333">Discord</button>
-                    </div>
-                    <div class="col-md-2">
-                        <button type="button" class="btn btn-success" data-bs-toggle="popover" title="School Email:" data-bs-content="JHaldes@cps.edu">School Email</button>
-                    </div>
-                    <div class="col-md-2">
-                        <button type="button" class="btn btn-success" data-bs-toggle="popover" title="Personal Email:" data-bs-content="skydog.w7@gmail.com">Personal Email</button>
-                    </div>
-                    <div class="col-md-6">
-                        <!--I just put this here so the grid is complete. If you're seeing this and not my teacher, why are you here? :)-->
                     </div>
                 </div>
             </div>
         </footer>
+        
         <script>
             document.addEventListener('DOMContentLoaded', function() {
                 var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
